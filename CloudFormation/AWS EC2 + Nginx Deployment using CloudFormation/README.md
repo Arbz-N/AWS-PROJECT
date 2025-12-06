@@ -50,3 +50,26 @@ Before you deploy this CloudFormation stack, make sure you have:
        Value: YourInstanceName       # Instance Name
    VpcId: vpc-xxxxxxxxxxxxxxxxx      # Your VPC ID
    GroupName: YourSecurityGroupName  # Security Group Name
+
+2.Validate the template (optional but recommended):
+
+aws cloudformation validate-template --template-body file://ec2-nginx.yml
+
+
+3.Create the stack:
+
+aws cloudformation create-stack \
+  --stack-name MySimpleStack \
+  --template-body file://ec2-nginx.yml \
+  --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM
+
+
+4.Check stack status:
+
+aws cloudformation describe-stacks --stack-name MySimpleStack
+
+
+5.Access your webpage:
+
+Open the EC2 instance's Elastic IP in a browser.
+You should see the sample Nginx webpage.
