@@ -93,25 +93,4 @@ Verify Internet Access
   The project is modular; you can deploy parts step by step or region by region.
   Scripts are designed to be idempotent, but verify resources to avoid duplication.
 
-Folder Structure
-VPC/AWS-MultiRegion-Networking/Peering
-├── eu-west-2
-│   ├── ec2-launch.sh
-│   ├── igw-create.sh
-│   ├── route-table-public.sh
-│   ├── sg-rules.sh
-│   ├── subnet-public.sh
-│   └── vpc-create.sh
-├── us-east-1
-│   ├── NAT-Setup
-│   │   ├── nat-gateway.sh
-│   │   ├── route-nat.sh
-│   │   └── subnet-private.sh
-│   ├── ec2-launch.sh
-│   ├── igw-create.sh
-│   ├── route-table-public.sh
-│   ├── sg-rules.sh
-│   ├── subnet-public.sh
-│   ├── vpc-create.sh
-│   └── vpc-peering.sh
-└── vpc-peering-accept.sh
+💡 Learning Tip: If you are deploying this project for practice or learning only, don’t forget to delete all the resources afterwards to avoid unnecessary AWS charges.
