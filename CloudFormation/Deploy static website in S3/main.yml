@@ -29,9 +29,3 @@ Resources:
               - s3:GetObject
             Resource:
               - !Sub "${StaticWebsiteBucket.Arn}/*"
-
-Outputs:
-
-  WebsiteURL:
-    Description: S3 Static Website URL
-    Value: !GetAtt StaticWebsiteBucket.WebsiteURL
