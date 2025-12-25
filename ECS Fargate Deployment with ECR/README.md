@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/ecs-fargate-architecture.png" width="800"/>
+</p>
+
 #  ECS Fargate Deployment with ECR, Rolling Updates & Health Checks
 
 ---
@@ -30,7 +34,7 @@ Before starting, make sure you have:
   - Fargate
   - ALB
 - AWS CLI configured
-- Docker installed
+  - Docker installed
 - Node.js & npm
 - Basic understanding of:
   - Docker
